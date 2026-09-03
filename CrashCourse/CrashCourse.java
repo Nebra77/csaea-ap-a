@@ -49,18 +49,34 @@ public class CrashCourse {     // class header
         // ! not
         // %% and
         // || or
+
+        //Casting
+        int g = (int)5.5; //rounds down
+        System.out.println(g);
+        double h = (double)5/6;
+        System.out.println(h);
         
-/*
-true
-false
-true
-true */
+        //Strings
+        String s1 = "hey ";
+        String s2 = "wasup ";
+        String s3 = "hello";
+        String big = s1+s2+s3;
+        System.out.println(big);
+        big += " man";
+        System.out.println(big);
 
+        //Arrays
+        int [] arry1 = new int[10];
+        System.out.println(arry1); //prints memory adress
+        arry1[0] = 11;
+        arry1[1] = 2;
+        System.out.println(arry1);
+        int[] arry2 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-
-
-
-
+        //2d arrays
+        int [] [] arryGrid1 = new int[4][3]; //[rows][columns]
+        System.out.println(arryGrid1.length); //prints memory adress
+        System.out.println(arryGrid1[0].length); //prints memory adress
 
     }
 }
