@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class CrashCourse {     // class header
 
     public static void main(String[] args) {
@@ -75,8 +77,27 @@ public class CrashCourse {     // class header
 
         //2d arrays
         int [] [] arryGrid1 = new int[4][3]; //[rows][columns]
-        System.out.println(arryGrid1.length); //prints memory adress
-        System.out.println(arryGrid1[0].length); //prints memory adress
+        System.out.println(arryGrid1.length);
+        System.out.println(arryGrid1[0].length);
+
+        int[][] arryGrid2= {{7,8,9},{4,5,6},{1,2,3}};
+        System.out.println(arryGrid2[0][1]); //get 8
+
+        /*ArrayLists
+        Any size, many built in functions
+        Avoid primative data types
+        Special classes for Integer, Boolean, Double, and String. Called "wrapper classes" */
+        ArrayList<String> arryLst = new ArrayList<>();
+        arryLst.add("I");
+        arryLst.add("love");
+        arryLst.add("John");
+        arryLst.remove(0);
+        System.out.println(arryLst);
+        arryLst.add(0, "Me");
+        System.out.println(arryLst.size());
+        System.out.println(arryLst.get(2));
+
+
 
     }
 }
