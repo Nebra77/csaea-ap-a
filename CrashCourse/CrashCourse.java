@@ -96,8 +96,5 @@ public class CrashCourse {     // class header
         arryLst.add(0, "Me");
         System.out.println(arryLst.size());
         System.out.println(arryLst.get(2));
-
-
-
     }
 }
