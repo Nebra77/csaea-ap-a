@@ -96,5 +96,23 @@ public class CrashCourse {     // class header
         arryLst.add(0, "Me");
         System.out.println(arryLst.size());
         System.out.println(arryLst.get(2));
+
+        //Math Class
+        Math.max(2,3); // returns 2
+        Math.min(4,5); // returns 4
+        Math.sqrt(49); //returns 7
+        Math.abs(-3); //returns 3
+        //if elseif else
+        
+
+        boolean tru = true; boolean fal = false;
+        if(tru){
+            System.out.println("Good stuff");
+        }else if(!fal){
+            System.out.println("eh")
+        }else{
+            System.out.println("Less good stuff");
+        }
+//CHECK THE GITHUB AND PASTE IT HERE
     }
 }
