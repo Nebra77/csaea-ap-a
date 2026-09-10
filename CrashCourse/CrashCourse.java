@@ -109,10 +109,53 @@ public class CrashCourse {     // class header
         if(tru){
             System.out.println("Good stuff");
         }else if(!fal){
-            System.out.println("eh")
+            System.out.println("eh");
         }else{
             System.out.println("Less good stuff");
         }
-//CHECK THE GITHUB AND PASTE IT HERE
+
+int x = 5;
+                while (x < 10) {
+            System.out.print(x + " ");
+            x++;
+         }
+
+         System.out.println();
+
+         // for loop
+         // initialize variable at index; conditional; increment/decrement
+         for(int i = 0; i < 5; i++) {
+            System.out.println(i);
+         }
+
+         // enhanced for loop (only for reading values)
+         ArrayList<String> animals = new ArrayList<>();
+         animals.add("Sheep");
+         animals.add("Deer");
+         animals.add("Moose");
+         System.out.println("ArrayList: " + animals);
+
+         for (String s : animals) {
+            System.out.println("We saw a " + s);
+         }
+
+         // printing values of an array with iteration
+
+         double[] arry = {5.1, 2.2, 5.3, 3.4, 8.5};
+         System.out.println("Memory address: " + arry);
+
+         for (int i = 0; i < arry.length; i++) {
+            System.out.println(arry[i]);
+         }
+
+        int[][] arryMatrix = {  { 0, 32, 12 }  ,   { 7, 13, 22  } ,  { 6, 77, 100  }  };
+        System.out.println(arryMatrix);
+
+        for(int row = 0; row < arryMatrix.length; row++) {
+            for(int col = 0; col < arryMatrix[row].length; col++) {
+                System.out.print(arryMatrix[row][col] + " ");
+            }
+            System.out.println();   
+        }
     }
 }
