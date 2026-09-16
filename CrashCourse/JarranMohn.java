@@ -1,5 +1,5 @@
 public class JarranMohn {
-    String characterNameString;
+    String characterName;
     int health;
     int defence;
     int strength;
