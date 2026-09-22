@@ -12,7 +12,7 @@ public class BankAccount {
         this.password = password;
         this.balance = balance;
         this.amountOfCards = 1;
-        this.accountNumber = (int) Math.random()*1000;
+        this.accountNumber = (int) (Math.random()*1000);
         this.bankName = "Chase Bank";
         this.active = true;
     }
@@ -54,7 +54,7 @@ public class BankAccount {
             System.out.println("Account Number: %d".formatted(accountNumber));
             System.out.println("Current Balance: %d".formatted(balance));
             System.out.println("Bank Location: %s".formatted(bankName));
-            System.out.println("Bank Location: %b".formatted(active));
+            System.out.println("Account Status: %b".formatted(active));
             System.out.println("Amount of Cards: %d".formatted(amountOfCards));
         }
     }
