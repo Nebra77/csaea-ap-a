@@ -23,6 +23,24 @@ public class Email {
     }
 
     public boolean isSchool(){
-        return false;
+        return adress.indexOf("hcvsd.org") !=-1;
+    }
+    public String getFirstName(){
+        return getUser().substring(0,adress.indexOf("."));
+    }
+
+    public String changeDomain(String newdomain){
+        return getUser() + "@" + newdomain;
+    }
+    public String getLabel(){
+        if(isSchool() == true){
+            return "School: hcvsd.org";
+        }
+        else{
+            return "Personal: " + getDomain();
+        }
+    }
+    public boolean isStaffFormat(){
+        return isSchool() && getFirstName().indexOf(".") != -1;
     }
 }
