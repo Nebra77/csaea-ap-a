@@ -5,7 +5,6 @@
  * Run:  javac Password.java PasswordTester.java
  *       java PasswordTester
  */
-
 public class PasswordTester {
 
     public static void main(String[] args){
@@ -41,5 +40,4 @@ public class PasswordTester {
         System.out.println(p.sameAs(x));
         System.out.println(p.isSafe("lioj"));
     }
-
 }
