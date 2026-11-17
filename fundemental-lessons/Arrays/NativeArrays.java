@@ -88,7 +88,36 @@ public class NativeArrays {
             }
         }
         */
-        
+               // Challenge: Curve the Scores
+        int[] scorings = {85, 62, 97, 45, 70, 99};
+        // Add 5 to every score, but no score can go above 100. 
+
+        for (int i = 0; i < scorings.length; i++) {
+                scorings[i] = Math.min(scorings[i] + 5, 100);
+                // if (scorings[i] > 100) {
+                //         scorings[i] = 100;
+                // }
         }
+
+        System.out.println(Arrays.toString(scorings));
+
+
+        // Challenge: Find the Highest
+        // int[] temps = {58, 71, 64, 80, 77, 69};
+        // Use a loop to find the highest temperature and the index it's at, then print both. Use Math.max()!
+
+        int highest = temps[0];
+        int highestIndex = 0;
         
+        for (int i = 1; i < temps.length; i++) {
+                // deals with value
+                highest = Math.max(highest, temps[i]);
+
+                // deals with the index
+                if (highest == temps[i]) {
+                        highestIndex = i;
+                }
+                
+        }
+        }
 }
